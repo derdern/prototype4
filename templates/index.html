@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for dat in data %}
+    {{ dat['age'] }}
+    {{ dat['gender'] }}
+{% endfor %}
+{% endblock %}

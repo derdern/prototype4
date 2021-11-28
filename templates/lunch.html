@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Lunch</h1>
+<h2>Recommendation</h2>
+<form method = 'post'>
+    <input type="radio" id="congee" name="dish" value="congee">
+    <label for="congee">Congee</label><br>
+    <input type="radio" id="burgerpork" name="dish" value="burgerpork">
+    <label for="burgerpork">Burgerpork</label><br>
+    <input type="radio" id="somtum" name="dish" value="somtum">
+    <label for="somtum">Somtum</label><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

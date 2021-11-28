@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Test</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>Welcome My App</h1>
+  <a href="{{ url_for('base') }}">Home</a>
+  <ul>
+        <li><a href="{{ url_for('add_data') }}">Add Data</a>
+        <li><a href="{{ url_for('personal') }}">Personal</a>
+        <li><a href="{{ url_for('morning') }}">Morning</a>
+        <li><a href="{{ url_for('lunch') }}">Lunch</a>
+        <li><a href="{{ url_for('dinner') }}">Dinner</a>
+              
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block content %}
+    {% endblock %}
+  </header>
+ 
+    <div class="flash">{{ message }}</div>
+
+</section>
